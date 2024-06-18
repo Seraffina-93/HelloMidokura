@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeatingManagerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-06-18T18:21:20" hostname="Curiouser.local" time="0.079">
+  <properties/>
+  <testcase name="testArrivesMultipleGroups()" classname="SeatingManagerTest" time="0.037"/>
+  <testcase name="testLocateGroupInTable()" classname="SeatingManagerTest" time="0.005"/>
+  <testcase name="testArrivesWaitlist()" classname="SeatingManagerTest" time="0.004"/>
+  <testcase name="testLeavesWaitingList()" classname="SeatingManagerTest" time="0.006"/>
+  <testcase name="testLocateGroupInWaitingList()" classname="SeatingManagerTest" time="0.005"/>
+  <testcase name="testSeatAfterGroupLeaves()" classname="SeatingManagerTest" time="0.003"/>
+  <testcase name="testArrivesSeated()" classname="SeatingManagerTest" time="0.002"/>
+  <testcase name="testLeavesSeated()" classname="SeatingManagerTest" time="0.001"/>
+  <system-out><![CDATA[Seated group of 2 at table 1
+Seated group of 4 at table 2
+Seated group of 6 at table 3
+Seated group of 2 at table 1
+Seated group of 4 at table 2
+Seated group of 6 at table 3
+Group 1 is seated at table 1
+Group 2 is seated at table 2
+Group 3 is seated at table 3
+Seated group of 6 at table 3
+No available table for group of 6
+Seated group of 6 at table 3
+No available table for group of 6
+Group of 6 left from waiting list.
+Seated group of 6 at table 3
+No available table for group of 6
+Group with ID 4 is not currently seated.
+Seated group of 6 at table 3
+No available table for group of 6
+Group 3 has left table 3
+Seated group of 6 at table 3
+Seated group of 2 at table 1
+Seated group of 2 at table 1
+Group 1 has left table 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
