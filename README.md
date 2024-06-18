@@ -42,13 +42,13 @@ This combination of data structures provides a balance between efficient searchi
 I used a TreeMap to manage available tables based on their seating capacity. The key in the TreeMap represents the number of empty seats available at a table.
 So, each key corresponds to a specific table availability (e.g., a key of 4 represents tables with 4 empty seats).
 
-Why TreeMap?
+**Why TreeMap?**
 
 The TreeMap is a self-balancing sorted map that keeps its key-value pairs ordered based on the key. In this case, the TreeMap is sorted in descending order of available seats. 
 
 When a customer group arrives, the search for a suitable table starts with tables having the highest available seats (matching or exceeding the group size). This reduces the number of comparisons needed to find a table that can accommodate the group.
 
-The PriorityQueue:
+**The PriorityQueue**
 
 Each key in the TreeMap is associated with a value, which is a PriorityQueue.
 This PriorityQueue stores the actual Table objects that have the corresponding number of empty seats. The PriorityQueue is ordered by the total size of the tables in ascending order. This means tables with a smaller total capacity are prioritized within the available seats category.
